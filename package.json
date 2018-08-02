@@ -6,10 +6,12 @@
   "scripts": {
     "start:html:browser": "run-p -l -r parcel:html:browser electron:start:with-url",
     "start:html:electron": "run-p -l -r parcel:html:electron electron:start:with-url",
+    "start:html:node": "run-p -l -r parcel:html:node electron:start:with-url",
     "start:js:electron:no-url": "run-p -l -r parcel:js:electron electron:start:no-url",
     "start:bundle:html:electron": "run-p -l -r parcel:bundle-script electron:start:with-url",
     "parcel:html:browser": "parcel ./src/index.html -d build/ --target=browser",
     "parcel:html:electron": "parcel ./src/index.html -d build/ --target=electron",
+    "parcel:html:node": "parcel ./src/index.html -d build/ --target=node",
     "parcel:js:electron": "parcel ./src/index.js -d build/ --target=electron",
     "parcel:bundle-script": "node parcel-bundler.js",
     "electron:start:with-url": "ELECTRON_START_URL=http://localhost:1234 electron .",
