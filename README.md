@@ -10,8 +10,6 @@ yarn
 
 # Issue
 
-I feel like I am missing some small insight around HRM or using Parcel with Electron projects.
-
 ## Setup #1 (start file = index.html, target=browser)
 ```
 yarn start:html:browser
